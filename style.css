@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Goudy Bookletter 1911';
+    scroll-behavior: smooth;
+}
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.2em;}
+ul{list-style: none;}
+
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
+    background-color:orange;
+    
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    background-color: darkorange;
+}
+
+.container, .container-proyec, #sobre-mi{
+    max-width: 1400px;
+    margin: auto ;
+}
+
+header .logo{
+    padding: 25px 30px;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(220, 0, 50);
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header nav{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    background-color: rgb(220, 0,60);
+}
+
+#hero{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; /*pa poner al centro todo*/
+    
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+        ),url(./imagenes/hero.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ; /* pa q ocupe todo el espacio*/
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#sobre-mi .img-container{
+    text-align: center;
+    font-family: 'Courier New', Arial;
+    padding: 200px 12px;
+}
+
+#proyectos{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    text-align: center;
+}
+#proyectos .container-proyec{
+    padding: 100px 12px;
+}
+
+#proyecto .proyectos-portafolio{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#proyectos h3{
+    margin-top: 0;
+}
+#proyectos p{
+    display: none;
+}
+#proyectos .carta {
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+        ),
+        url(./imagenes/proyect-encriptador-pequeno.png);
+    padding: 150px;
+    margin: 20px;
+    border-radius: 14px;
+}
+
+#lenguajes .container-lenguajes{
+    text-align: center;
+    padding: 200px;
+}
+#lenguajes li{
+    margin: 15px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+footer{
+    background-image:url(./imagenes/background-footer.jpg);
+}
+
+.contactame{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+#contactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+#contactos a{
+    padding: 0 2em;
+}
